@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Icebreaker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf602b537c528549495d53ed042ef1dd6511dc38")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47fe95edcdf3a04dd91f43c7610c29aa57bf2c89")]
 [assembly: System.Reflection.AssemblyProductAttribute("Icebreaker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Icebreaker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

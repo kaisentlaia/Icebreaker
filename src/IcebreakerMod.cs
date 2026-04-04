@@ -62,6 +62,7 @@ namespace Icebreaker
 
         private bool HasIceAtPos(BlockPos bpos)
         {
+            // Check all common layers (Solid, Liquid, Snow)
             for (int layer = 0; layer <= 2; layer++)
             {
                 Block block = sapi.World.BlockAccessor.GetBlock(bpos, layer);
@@ -227,17 +228,23 @@ namespace Icebreaker
                     prevX = curX;
                     prevZ = curZ;
 
-                    // Always break ice around the boat center (small radius for hull protection)
-                    BlockPos boatCenter = entity.Pos.AsBlockPos;
-                    BreakIceInRadius(boatCenter, 2);
+                    // Coverage offsets along the boat length (from back to front)
+                    // Sailboats are roughly 9 blocks long. We check points at -3, 0, 3, and 5 (tip).
+                    double[] offsets = new double[] { -3, 0, 3, 5 };
 
-                    // If we know the travel direction, also break ice at the tip
-                    if (hasForward)
+                    foreach (double offset in offsets)
                     {
-                        double tipX = curX + forwardX * 5.0;
-                        double tipZ = curZ + forwardZ * 5.0;
-                        BlockPos tipPos = new BlockPos((int)tipX, (int)entity.Pos.Y, (int)tipZ);
-                        BreakIceInRadius(tipPos, 2);
+                        double checkX = curX;
+                        double checkZ = curZ;
+
+                        if (hasForward)
+                        {
+                            checkX += forwardX * offset;
+                            checkZ += forwardZ * offset;
+                        }
+
+                        BlockPos bpos = new BlockPos((int)checkX, (int)(entity.Pos.Y + 0.1), (int)checkZ);
+                        BreakIceInRadius(bpos, 2);
                     }
                 }
                 catch (System.Exception)
