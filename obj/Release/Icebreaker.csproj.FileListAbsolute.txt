@@ -31,3 +31,4 @@ D:\Antigrav Projects\Icebreaker\obj\Release\Icebreaker.pdb
 D:\Antigrav Projects\Icebreaker\obj\Release\ref\Icebreaker.dll
 D:\Antigrav Projects\Icebreaker\bin\Release\Mods\mod\assets\icebreaker\lang\en.json
 D:\Antigrav Projects\Icebreaker\bin\Release\Mods\mod\assets\icebreaker\recipes\grid\metalfigurehead.json
+D:\Antigrav Projects\Icebreaker\bin\Release\Mods\mod\modicon.png
