@@ -1,0 +1,119 @@
+[
+	{
+		"ingredientPattern": "SMP,HMC",
+		"ingredients": {
+			"S": { "type": "item", "tags": ["tool-saw"], "isTool": true, "toolDurabilityCost": 1 },
+			"H": { "type": "item", "tags": ["tool-hammer"], "isTool": true, "toolDurabilityCost": 1 },
+			"C": { "type": "item", "tags": ["tool-chisel"], "isTool": true, "toolDurabilityCost": 1 },
+			"M": { "type": "item", "code": "metalplate-*", "name": "metal", "allowedVariants": ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel"], "quantity": 2 },
+			"P": { "type": "block", "code": "game:figurehead-bear" }
+		},
+		"width": 3,
+		"height": 2,
+		"output": { "type": "block", "code": "metalfigurehead-bear-{metal}", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "HMP,SMC",
+		"ingredients": {
+			"S": { "type": "item", "tags": ["tool-saw"], "isTool": true, "toolDurabilityCost": 1 },
+			"H": { "type": "item", "tags": ["tool-hammer"], "isTool": true, "toolDurabilityCost": 1 },
+			"C": { "type": "item", "tags": ["tool-chisel"], "isTool": true, "toolDurabilityCost": 1 },
+			"M": { "type": "item", "code": "metalplate-*", "name": "metal", "allowedVariants": ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel"], "quantity": 2 },
+			"P": { "type": "block", "code": "game:figurehead-eidolon" }
+		},
+		"width": 3,
+		"height": 2,
+		"output": { "type": "block", "code": "metalfigurehead-eidolon-{metal}", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "SMP,CMH",
+		"ingredients": {
+			"S": { "type": "item", "tags": ["tool-saw"], "isTool": true, "toolDurabilityCost": 1 },
+			"H": { "type": "item", "tags": ["tool-hammer"], "isTool": true, "toolDurabilityCost": 1 },
+			"C": { "type": "item", "tags": ["tool-chisel"], "isTool": true, "toolDurabilityCost": 1 },
+			"M": { "type": "item", "code": "metalplate-*", "name": "metal", "allowedVariants": ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel"], "quantity": 2 },
+			"P": { "type": "block", "code": "game:figurehead-erel" }
+		},
+		"width": 3,
+		"height": 2,
+		"output": { "type": "block", "code": "metalfigurehead-erel-{metal}", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "HMP,CMS",
+		"ingredients": {
+			"S": { "type": "item", "tags": ["tool-saw"], "isTool": true, "toolDurabilityCost": 1 },
+			"H": { "type": "item", "tags": ["tool-hammer"], "isTool": true, "toolDurabilityCost": 1 },
+			"C": { "type": "item", "tags": ["tool-chisel"], "isTool": true, "toolDurabilityCost": 1 },
+			"M": { "type": "item", "code": "metalplate-*", "name": "metal", "allowedVariants": ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel"], "quantity": 2 },
+			"P": { "type": "block", "code": "game:figurehead-gear" }
+		},
+		"width": 3,
+		"height": 2,
+		"output": { "type": "block", "code": "metalfigurehead-gear-{metal}", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "CMP,HMS",
+		"ingredients": {
+			"S": { "type": "item", "tags": ["tool-saw"], "isTool": true, "toolDurabilityCost": 1 },
+			"H": { "type": "item", "tags": ["tool-hammer"], "isTool": true, "toolDurabilityCost": 1 },
+			"C": { "type": "item", "tags": ["tool-chisel"], "isTool": true, "toolDurabilityCost": 1 },
+			"M": { "type": "item", "code": "metalplate-*", "name": "metal", "allowedVariants": ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel"], "quantity": 2 },
+			"P": { "type": "block", "code": "game:figurehead-seamonster" }
+		},
+		"width": 3,
+		"height": 2,
+		"output": { "type": "block", "code": "metalfigurehead-seamonster-{metal}", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "CMS,HMP",
+		"ingredients": {
+			"S": { "type": "item", "tags": ["tool-saw"], "isTool": true, "toolDurabilityCost": 1 },
+			"H": { "type": "item", "tags": ["tool-hammer"], "isTool": true, "toolDurabilityCost": 1 },
+			"C": { "type": "item", "tags": ["tool-chisel"], "isTool": true, "toolDurabilityCost": 1 },
+			"M": { "type": "item", "code": "metalplate-*", "name": "metal", "allowedVariants": ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel"], "quantity": 2 },
+			"P": { "type": "block", "code": "game:figurehead-siren" }
+		},
+		"width": 3,
+		"height": 2,
+		"output": { "type": "block", "code": "metalfigurehead-siren-{metal}", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "HMP,CMS",
+		"ingredients": {
+			"S": { "type": "item", "tags": ["tool-saw"], "isTool": true, "toolDurabilityCost": 1 },
+			"H": { "type": "item", "tags": ["tool-hammer"], "isTool": true, "toolDurabilityCost": 1 },
+			"C": { "type": "item", "tags": ["tool-chisel"], "isTool": true, "toolDurabilityCost": 1 },
+			"M": { "type": "item", "code": "metalplate-*", "name": "metal", "allowedVariants": ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel"], "quantity": 3 },
+			"P": { "type": "block", "code": "game:figurehead-skull" }
+		},
+		"width": 3,
+		"height": 2,
+		"output": { "type": "block", "code": "metalfigurehead-skull-{metal}", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "CMP,SMH",
+		"ingredients": {
+			"S": { "type": "item", "tags": ["tool-saw"], "isTool": true, "toolDurabilityCost": 1 },
+			"H": { "type": "item", "tags": ["tool-hammer"], "isTool": true, "toolDurabilityCost": 1 },
+			"C": { "type": "item", "tags": ["tool-chisel"], "isTool": true, "toolDurabilityCost": 1 },
+			"M": { "type": "item", "code": "metalplate-*", "name": "metal", "allowedVariants": ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel"], "quantity": 2 },
+			"P": { "type": "block", "code": "game:figurehead-thunderlord" }
+		},
+		"width": 3,
+		"height": 2,
+		"output": { "type": "block", "code": "metalfigurehead-thunderlord-{metal}", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "CMS,HMP",
+		"ingredients": {
+			"S": { "type": "item", "tags": ["tool-saw"], "isTool": true, "toolDurabilityCost": 1 },
+			"H": { "type": "item", "tags": ["tool-hammer"], "isTool": true, "toolDurabilityCost": 1 },
+			"C": { "type": "item", "tags": ["tool-chisel"], "isTool": true, "toolDurabilityCost": 1 },
+			"M": { "type": "item", "code": "metalplate-*", "name": "metal", "allowedVariants": ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel"], "quantity": 2 },
+			"P": { "type": "block", "code": "game:figurehead-wolf" }
+		},
+		"width": 3,
+		"height": 2,
+		"output": { "type": "block", "code": "metalfigurehead-wolf-{metal}", "quantity": 1 }
+	}
+]

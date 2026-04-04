@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Antigrav Projects\\Automapmarker 1.22\\mods\\Icebreaker\\Icebreaker.csproj",
+      "projectUniqueName": "D:\\Antigrav Projects\\Icebreaker\\Icebreaker.csproj",
       "projectName": "Icebreaker",
-      "projectPath": "D:\\Antigrav Projects\\Automapmarker 1.22\\mods\\Icebreaker\\Icebreaker.csproj",
+      "projectPath": "D:\\Antigrav Projects\\Icebreaker\\Icebreaker.csproj",
       "packagesPath": "C:\\Users\\ytell\\.nuget\\packages\\",
-      "outputPath": "D:\\Antigrav Projects\\Automapmarker 1.22\\mods\\Icebreaker\\obj\\",
+      "outputPath": "D:\\Antigrav Projects\\Icebreaker\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

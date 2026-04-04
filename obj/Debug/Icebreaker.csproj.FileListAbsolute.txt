@@ -1,0 +1,16 @@
+D:\Antigrav Projects\Icebreaker\bin\Debug\Mods\mod\assets\icebreaker\blocktypes\metalfigurehead.json
+D:\Antigrav Projects\Icebreaker\bin\Debug\Mods\mod\assets\icebreaker\patches\boats.json
+D:\Antigrav Projects\Icebreaker\bin\Debug\Mods\mod\modinfo.json
+D:\Antigrav Projects\Icebreaker\bin\Debug\Mods\mod\Icebreaker.deps.json
+D:\Antigrav Projects\Icebreaker\bin\Debug\Mods\mod\Icebreaker.dll
+D:\Antigrav Projects\Icebreaker\bin\Debug\Mods\mod\Icebreaker.pdb
+D:\Antigrav Projects\Icebreaker\obj\Debug\Icebreaker.csproj.AssemblyReference.cache
+D:\Antigrav Projects\Icebreaker\obj\Debug\Icebreaker.GeneratedMSBuildEditorConfig.editorconfig
+D:\Antigrav Projects\Icebreaker\obj\Debug\Icebreaker.AssemblyInfoInputs.cache
+D:\Antigrav Projects\Icebreaker\obj\Debug\Icebreaker.AssemblyInfo.cs
+D:\Antigrav Projects\Icebreaker\obj\Debug\Icebreaker.csproj.CoreCompileInputs.cache
+D:\Antigrav Projects\Icebreaker\obj\Debug\Icebreaker.sourcelink.json
+D:\Antigrav Projects\Icebreaker\obj\Debug\Icebreaker.dll
+D:\Antigrav Projects\Icebreaker\obj\Debug\refint\Icebreaker.dll
+D:\Antigrav Projects\Icebreaker\obj\Debug\Icebreaker.pdb
+D:\Antigrav Projects\Icebreaker\obj\Debug\ref\Icebreaker.dll
