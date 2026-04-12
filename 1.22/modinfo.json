@@ -6,7 +6,7 @@
     "Benata"
   ],
   "description": "Makes sailboats able to break ice in winter.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "dependencies": {
     "game": "1.22.0-rc.7"
   }
