@@ -83,7 +83,7 @@
 			"S": { "type": "item", "tags": ["tool-saw"], "isTool": true, "toolDurabilityCost": 1 },
 			"H": { "type": "item", "tags": ["tool-hammer"], "isTool": true, "toolDurabilityCost": 1 },
 			"C": { "type": "item", "tags": ["tool-chisel"], "isTool": true, "toolDurabilityCost": 1 },
-			"M": { "type": "item", "code": "game:metalplate-*", "name": "metal", "allowedVariants": ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel"], "quantity": 2 },
+			"M": { "type": "item", "code": "metalplate-*", "name": "metal", "allowedVariants": ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel"], "quantity": 3 },
 			"P": { "type": "block", "code": "game:figurehead-skull" }
 		},
 		"width": 3,

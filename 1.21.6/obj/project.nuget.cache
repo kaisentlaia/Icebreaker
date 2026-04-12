@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "0xajN0Fc+rU=",
+  "success": true,
+  "projectFilePath": "D:\\Antigrav Projects\\Icebreaker\\1.21.6\\Icebreaker.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ytell\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.25\\microsoft.netcore.app.ref.8.0.25.nupkg.sha512",
+    "C:\\Users\\ytell\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.25\\microsoft.windowsdesktop.app.ref.8.0.25.nupkg.sha512",
+    "C:\\Users\\ytell\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.25\\microsoft.aspnetcore.app.ref.8.0.25.nupkg.sha512"
+  ],
+  "logs": []
+}

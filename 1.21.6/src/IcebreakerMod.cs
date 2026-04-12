@@ -89,47 +89,35 @@ namespace Icebreaker
             }
         }
 
-        private int debugCounter = 0;
         private EntityBehavior cachedAccessoriesBehavior = null;
         private bool accessoriesChecked = false;
 
         private bool HasMetalFigurehead()
         {
-            bool shouldLog = (debugCounter % 50 == 0); // Log every ~5 seconds
             try
             {
                 // Find the rideableaccessories behavior - cache it after first lookup
                 if (!accessoriesChecked)
                 {
                     accessoriesChecked = true;
-                    
-                    // Log all behaviors for debugging
+
                     var allBehaviors = entity.SidedProperties?.Behaviors;
                     if (allBehaviors != null)
                     {
                         foreach (var b in allBehaviors)
                         {
-                            sapi.Logger.Notification("[Icebreaker] Entity behavior: PropertyName='{0}', Type='{1}'", b.PropertyName(), b.GetType().Name);
                             if (b.GetType().Name.Contains("RideableAccessories") || b.GetType().Name.Contains("rideableaccessories"))
                             {
                                 cachedAccessoriesBehavior = b;
+                                break;
                             }
                         }
                     }
-                    
+
                     // Also try the standard lookup
                     if (cachedAccessoriesBehavior == null)
                     {
                         cachedAccessoriesBehavior = entity.GetBehavior("rideableaccessories");
-                    }
-                    
-                    if (cachedAccessoriesBehavior == null)
-                    {
-                        sapi.Logger.Notification("[Icebreaker] Could not find rideableaccessories on entity {0}", entity.Code);
-                    }
-                    else
-                    {
-                        sapi.Logger.Notification("[Icebreaker] Found accessories behavior: {0}", cachedAccessoriesBehavior.GetType().FullName);
                     }
                 }
 
@@ -144,51 +132,35 @@ namespace Icebreaker
 
                 if (invProp == null)
                 {
-                    if (shouldLog)
-                    {
-                        var allProps = cachedAccessoriesBehavior.GetType().GetProperties();
-                        string names = string.Join(", ", System.Array.ConvertAll(allProps, p => p.Name));
-                        sapi.Logger.Notification("[Icebreaker] No Inventory property found. Available: {0}", names);
-                    }
                     return false;
                 }
 
                 var invObj = invProp.GetValue(cachedAccessoriesBehavior);
                 if (invObj == null)
                 {
-                    if (shouldLog) sapi.Logger.Notification("[Icebreaker] Inventory property is null");
                     return false;
                 }
 
                 if (invObj is Vintagestory.API.Common.IInventory inv)
                 {
-                    int slotCount = 0;
                     foreach (var slot in inv)
                     {
-                        slotCount++;
                         if (slot.Empty) continue;
 
                         var stack = slot.Itemstack;
                         if (stack == null) continue;
 
                         string codePath = stack.Collectible?.Code?.Path;
-                        if (shouldLog) sapi.Logger.Notification("[Icebreaker] Slot {0} item: {1}", slotCount, codePath ?? "(null)");
-
                         if (codePath != null && codePath.StartsWith("metalfigurehead"))
                         {
                             return true;
                         }
                     }
-                    if (shouldLog) sapi.Logger.Notification("[Icebreaker] Checked {0} slots, no metalfigurehead found", slotCount);
-                }
-                else
-                {
-                    if (shouldLog) sapi.Logger.Notification("[Icebreaker] Inventory is type: {0}", invObj.GetType().FullName);
                 }
             }
-            catch (System.Exception ex)
+            catch (System.Exception)
             {
-                sapi.Logger.Warning("[Icebreaker] Error checking figurehead: {0}", ex.Message);
+                // Silently ignore reflection errors
             }
             return false;
         }
@@ -197,8 +169,6 @@ namespace Icebreaker
         {
             if (entity.Alive && entity.Pos != null)
             {
-                debugCounter++;
-
                 // Only act if the metal figurehead is attached
                 if (!HasMetalFigurehead())
                 {

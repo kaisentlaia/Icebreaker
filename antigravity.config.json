@@ -1,0 +1,14 @@
+{
+  "models": {
+    "local": {
+      "provider": "openai-compatible",
+      "baseUrl": "http://localhost:11434/v1",
+      "model": "gemma4:e2b",
+      "apiKey": "ollama",
+      "temperature": 0.1,
+      "maxTokens": 4096,
+      "contextWindow": 128000
+    }
+  },
+  "defaultModel": "local"
+}
