@@ -33,4 +33,4 @@ This mod is licensed under the **GNU GPL v3**.
 While the code is open under GPL, I kindly ask that you do **not** re-upload this mod or include its functionality in other mods without my express permission. If you wish to use any part of this work in your own project, please reach out to me (Benata) first!
 
 ---
-*Created by Benata*
+*Created by Benata (a.k.a Auri3l)*
